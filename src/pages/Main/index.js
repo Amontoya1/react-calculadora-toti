@@ -1,7 +1,7 @@
 import React from 'react';
 import Btn from '../../components/btn';
-import { useState, useEffect } from "react";
-import NumberFormat from "react-number-format";
+//import { useState, useEffect } from "react";
+//import NumberFormat from "react-number-format";
 
 class Main extends React.Component {
     constructor(props){
