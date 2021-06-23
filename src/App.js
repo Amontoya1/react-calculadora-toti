@@ -1,8 +1,14 @@
 import './App.css';
-import { useState, useEffect } from "react";
-import NumberFormat from "react-number-format";
+import Main from './pages/Main';
+//import { useState, useEffect } from "react";
+//import NumberFormat from "react-number-format";
+
 
 function App() {
+  return (<Main></Main>);
+}
+
+/* function App() {
   const [preState, setPreState] = useState("");
   const [curState, setCurState] = useState("");
   const [input, setInput] = useState("0");
@@ -165,6 +171,6 @@ function App() {
       </div>
     </div>
   );
-}
+} */
 
 export default App;
