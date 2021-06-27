@@ -1,11 +1,7 @@
-import './App.css';
-import Main from './pages/Main';
-
-
+import Calculator from "./pages/Main/index";
 
 function App() {
-  return (<Main></Main>);
+  return <Calculator></Calculator>;
 }
-
 
 export default App;
