@@ -1,15 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  -webkit-user-drag: none;
-  -webkit-app-region: none;
-}
 
 body {
-  /* background-image: url("https://vtex.com/wp-content/uploads/2020/06/grow-revenue-and-reach-cover-desktop-1035x1300.jpg"); */
   display: grid;
   place-content: center;
   font-family: "Roboto", sans-serif;
@@ -20,7 +11,7 @@ body {
 .container {
   height: 80vh;
   width: 50vh;
-  background-color: rgb(12, 5, 24);
+  background-color: rgb(37, 18, 70);
   border-radius: 1rem;
   padding: 1rem;
   -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
@@ -71,13 +62,13 @@ body {
 }
 
 .operador {
-  background-color: rgb(187, 185, 190);
+  background-color: rgb(241, 238, 247);
   color: rgb(11, 11, 12);
 }
 
 .operador:hover {
   background-color: rgb(187, 185, 190);
-  color: rgb(11, 11, 12);
+  color: rgb(83, 59, 124)
 }
 
 .zero {
@@ -86,5 +77,19 @@ body {
   place-content: unset;
   align-items: center;
   padding-left: 2rem;
+}
+
+h6 {
+  color: rgb(13, 5, 24);
+}
+
+.logo {
+  border-radius: 25px;
+  background-color: white;
+  color: rgb(157, 99, 233);
+  align-items: center;
+  font-size: 1.3rem;
+  margin-left: 8rem;
+  border: rgb(157, 99, 233);
 }
 

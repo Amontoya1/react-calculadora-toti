@@ -2,8 +2,17 @@ import React from "react";
 import "../../App.css";
 import { useState, useEffect } from "react";
 import NumberFormat from "react-number-format";
+import { ThemeProvider } from 'styled-components';
+import GlobalStyle from '../../styles/global';
+import {lightTheme, darkTheme} from '../../styles/theme';
+import { BiAdjust } from "react-icons/bi";
+
 
 function Calculator() {
+
+  const [theme, setTheme] = useState("light");
+  const themeToggler = () => {theme === "light" ? setTheme("dark") : setTheme("light")};
+
   const [preState, setPreState] = useState("");
   const [curState, setCurState] = useState("");
   const [input, setInput] = useState("0");
@@ -88,7 +97,10 @@ function Calculator() {
     setCurState("");
     setInput("0");
   };
+
   return (
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+       <GlobalStyle/>
     <div className="container">
       <div className="wrapper">
         <div className="screen">
@@ -164,8 +176,16 @@ function Calculator() {
           =
         </div>
       </div>
+      <div  className="btn" onClick={themeToggler}>
+      </div>
     </div>
+    <button className="logo" onClick={() => themeToggler()}> Click Theme<BiAdjust/></button>
+    
+    <h6>Desenvolvedores Roselino / Andrea Vtex-Toti</h6>
+    </ThemeProvider>
   );
 }
 
 export default Calculator;
+
+
